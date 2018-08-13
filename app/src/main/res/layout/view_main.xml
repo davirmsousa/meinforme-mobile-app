@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.android.meinforme.views.main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/splashBackgroud"
+    android:id="@+id/mainLayoutSplashScreen"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/icone_logo_meinforme"
+            android:layout_gravity="center"
+            android:layout_height="100sp"
+            android:layout_width="100sp"
+            android:clickable="false"
+            android:id="@+id/logo"/>
+
+        <ImageView
+            android:contentDescription="@string/load_description"
+            android:layout_gravity="center"
+            android:src="@drawable/load2"
+            android:layout_height="50sp"
+            android:layout_width="50sp"
+            android:id="@+id/loadgif"
+            android:clickable="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

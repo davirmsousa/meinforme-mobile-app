@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_boderbottomlist"
+    android:layout_width="match_parent"
+    android:id="@+id/LayoutItemRide"
+    android:layout_height="100sp"
+    android:paddingStart="16sp"
+    android:paddingLeft="16sp"
+    android:paddingRight="8sp"
+    android:minHeight="100sp"
+    android:paddingTop="8sp"
+    android:paddingEnd="8sp">
+
+    <!--Foto do usuario-->
+    <ImageView
+        android:contentDescription="@string/profile_photo"
+        android:src="@drawable/default_user_rounded"
+        android:layout_marginRight="8sp"
+        android:layout_marginTop="17sp"
+        android:id="@+id/profilePhoto"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8sp"
+        android:layout_height="50sp"
+        android:layout_width="50sp"/>
+
+    <!--Nome do usuario-->
+    <TextView
+        android:layout_toRightOf="@+id/profilePhoto"
+        android:layout_toEndOf="@+id/profilePhoto"
+        android:text="Nome do dono do carro"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/responsibleName"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!--Rota 1-->
+    <TextView
+        android:layout_toRightOf="@+id/profilePhoto"
+        android:layout_below="@+id/responsibleName"
+        android:layout_toEndOf="@+id/profilePhoto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:id="@+id/route1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="Rota 1"
+        android:maxLines="1"/>
+
+    <!--Rota 2-->
+    <TextView
+        android:layout_toRightOf="@+id/profilePhoto"
+        android:layout_toEndOf="@+id/profilePhoto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/route1"
+        android:singleLine="true"
+        android:id="@+id/route2"
+        android:gravity="start"
+        android:ellipsize="end"
+        android:text="Rota 2"
+        android:maxLines="1"/>
+
+    <!--Rota 3-->
+    <TextView
+        android:layout_toRightOf="@+id/profilePhoto"
+        android:layout_toEndOf="@+id/profilePhoto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/route2"
+        android:singleLine="true"
+        android:id="@+id/route3"
+        android:gravity="start"
+        android:ellipsize="end"
+        android:text="Rota 3"
+        android:maxLines="1"/>
+
+</RelativeLayout>

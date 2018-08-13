@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    tools:context="com.example.android.meinforme.views.notices"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/defaultBackgroud"
+    android:id="@+id/MainCoordinatorLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/customAppBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/customTooBar"
+            app:layout_collapseMode="pin"
+            android:padding="0dp">
+            <TextView
+                android:text="@string/notice_activity_title"
+                android:paddingRight="@dimen/paddingRTitle"
+                android:paddingEnd="@dimen/paddingRTitle"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                tools:ignore="RtlSymmetry"
+                android:gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/LinearMenuIcon"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            app:layout_scrollFlags="snap">
+
+            <!--<ImageView
+                android:contentDescription="@string/icon_notices"
+                android:src="@drawable/newspaper_o"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:id="@+id/iconNews"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:padding="7sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_talkUs"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/speaker_b"
+                android:id="@+id/iconTalkUs"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:layout_weight="1"
+                android:padding="7sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_ride"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/car_b"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:id="@+id/iconRide"
+                android:layout_weight="1"
+                android:padding="10.1sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_account"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/account_b"
+                android:id="@+id/iconAccount"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:layout_weight="1"
+                android:padding="8sp"/>-->
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--Scroll view-->
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/defaultBackgroud"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <!--Main Content Layout-->
+        <LinearLayout
+            android:background="@color/defaultBackgroud"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <!--Data escolhida-->
+            <TextView
+                android:background="@color/defaultBackgroud"
+                android:textColor="@color/pureBlack"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/ten_recent"
+                android:onClick="showCalendar"
+                android:textAlignment="center"
+                android:id="@+id/noticeDate"
+                android:textAllCaps="true"
+                android:paddingTop="10sp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <!--Gif de carregamento-->
+            <ImageView
+                android:contentDescription="@string/load_description"
+                android:id="@+id/imageLoadNotice"
+                android:layout_marginTop="10sp"
+                android:layout_gravity="center"
+                android:src="@drawable/load4"
+                android:layout_height="30sp"
+                android:layout_width="30sp"/>
+
+            <!--Notices Layout-->
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/LinearNotices"
+                android:orientation="vertical"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

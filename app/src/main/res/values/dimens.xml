@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    // Tela de informativos
+
+        // Padding dos elementos do informativo
+        <dimen name="date_padding">12sp</dimen>
+        <dimen name="date_margin">8sp</dimen>
+
+        // Espacamento estre os informativos
+        <dimen name="min_height">10sp</dimen>
+        <dimen name="min_height_plus">20sp</dimen>
+
+    // Tela de FCaG
+        // Tamanho do label
+        <dimen name="labelSize">17sp</dimen>
+        <dimen name="labelPadding">10sp</dimen>
+
+    // Menu
+        <dimen name="paddingRTitle">21sp</dimen>
+        <dimen name="paddingRTitle2">63sp</dimen>
+
+    // Tela Minha Conta
+        <dimen name="itemTitleSize">16sp</dimen>
+        <dimen name="itemBodySize">14sp</dimen>
+
+    // Tela carona
+        <dimen name="hintSize">8sp</dimen>
+
+    // Tela detalhe dacarona
+        <dimen name="item_route_size">10sp</dimen>
+        <dimen name="item_route_default_padding">8sp</dimen>
+        <dimen name="item_route_right_padding">16sp</dimen>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    tools:context="com.example.android.meinforme.views.validate"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/defaultBackgroud"
+    android:id="@+id/mainValidateLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:paddingRight="16sp"
+    android:paddingLeft="16sp"
+    android:focusable="true">
+
+    <!--Texto superior-->
+    <TextView
+        android:textColor="@color/smoothGreyColor"
+        android:layout_height="wrap_content"
+        android:text="@string/text_validate"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+    <!--Layout Content-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <!--EditText matricula-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widgetRegistryUser"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:errorEnabled="true">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:hint="@string/registry_hint"
+                android:layout_width="match_parent"
+                android:id="@+id/validRegistry"
+                android:layout_marginTop="16sp"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:ems="15"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--EditText nova senha-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/widgetPassUser"
+            app:errorEnabled="true">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:hint="@string/new_pass_hint"
+                android:layout_width="match_parent"
+                android:id="@+id/newPassStudent"
+                android:inputType="textPassword"
+                android:layout_marginTop="16sp"
+                android:textSize="16sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Botao continuar-->
+        <Button
+            android:background="@drawable/shape_orangebuttom"
+            android:text="@string/button_continue_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/finishValidation"
+            android:textColor="@color/white"
+            android:layout_marginTop="16sp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!--Link para cancelar a validacao-->
+        <TextView
+            android:textColor="@color/smoothGreyColor"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8sp"
+            android:id="@+id/backToLogin"
+            android:onClick="backToLogin"
+            android:text="@string/back"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Content Layout-->
+    <LinearLayout
+        android:background="@drawable/shape_boderbottomlist"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15sp"
+        android:id="@+id/defaultEItem"
+        android:paddingBottom="8sp">
+
+        <!--Label-->
+        <TextView
+            android:textSize="@dimen/itemTitleSize"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/listItemTitle"
+            android:paddingBottom="6sp"
+            android:paddingStart="8sp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="8sp"
+            android:textStyle="bold"
+            android:text="Title"/>
+
+        <!--Input new tel-->
+        <EditText
+            android:textSize="@dimen/itemBodySize"
+            android:hint="@string/new_tel"
+            tools:ignore="RtlSymmetry"
+            android:paddingStart="8sp"
+            android:paddingLeft="8sp"
+            android:inputType="numberSigned"
+            android:id="@+id/listItemEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    tools:context="com.example.android.meinforme.views.talk_us"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/defaultBackgroud"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:id="@+id/MainLayoutTU"
+    android:focusable="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/customAppBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/customTooBar"
+            app:layout_collapseMode="pin"
+            android:padding="0dp">
+            <TextView
+                android:text="@string/talkUs_activity_title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/paddingRTitle"
+                android:paddingEnd="@dimen/paddingRTitle"
+                android:gravity="center" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:id="@+id/LinearMenuIcon"
+            android:orientation="horizontal"
+            app:layout_scrollFlags="snap">
+
+            <!--<ImageView
+                android:contentDescription="@string/icon_notices"
+                android:src="@drawable/newspaper_o"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:id="@+id/iconNews"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:padding="7sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_talkUs"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/speaker_b"
+                android:id="@+id/iconTalkUs"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:layout_weight="1"
+                android:padding="7sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_ride"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/car_b"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:id="@+id/iconRide"
+                android:layout_weight="1"
+                android:padding="10.1sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_account"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/account_b"
+                android:id="@+id/iconAccount"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:layout_weight="1"
+                android:padding="8sp"/>-->
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--Scrool Layout-->
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/defaultBackgroud"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/mainTULayout">
+
+        <!--Content Layout-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp">
+
+            <!--Label Anonimo-->
+            <TextView
+                android:text="@string/identification_title"
+                android:textColor="@color/labelColor"
+                android:padding="@dimen/labelPadding"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/labelSize"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"/>
+
+            <!--CheckBox Anonimo-->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:text="@string/checkBoxAnonymousLabel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/annonymous"/>
+
+            </LinearLayout>
+
+            <!--Label Carater da mensagem-->
+            <TextView
+                android:text="@string/formType_title"
+                android:padding="@dimen/labelPadding"
+                android:textColor="@color/labelColor"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/labelSize"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"/>
+
+            <!--CheckBox Carater da mensagem-->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <RadioButton
+                        android:text="@string/checkBoxFormTypeDoubtLabel"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/doubt"/>
+
+                    <RadioButton
+                        android:text="@string/checkBoxFormTypePraiseLabel"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/praise"/>
+
+                    <RadioButton
+                        android:text="@string/checkBoxFormTypeComplaintLabel"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/complaint"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!--Mensagem Layout-->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <!--Mensagem label-->
+                <TextView
+                    android:text="@string/talkUs_message_title"
+                    android:padding="@dimen/labelPadding"
+                    android:textColor="@color/labelColor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/labelSize"
+                    android:layout_gravity="center"
+                    android:layout_margin="13dp"/>
+
+                <!--Input mensagem-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/widgetStudentMessage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:inputType="textCapSentences|textAutoCorrect"
+                        android:hint="@string/type_your_text"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/studentMessage"
+                        android:textSize="15sp"
+                        android:maxLength="150"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Button-->
+                <Button
+                    android:background="@drawable/shape_orangebuttom"
+                    android:text="@string/button_send_text"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sendStudentMessage"
+                    android:layout_marginBottom="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16sp"
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:onClick="SendForm"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

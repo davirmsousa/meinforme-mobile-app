@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    tools:context="com.example.android.meinforme.views.account"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/defaultBackgroud"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayoutAccount"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/customAppBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/customTooBar"
+            app:layout_collapseMode="pin"
+            android:padding="0dp">
+            <TextView
+                android:text="@string/account_activity_title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/paddingRTitle"
+                android:paddingEnd="@dimen/paddingRTitle"
+                android:gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/LinearMenuIcon"
+            android:orientation="horizontal"
+            app:layout_scrollFlags="snap"
+            android:background="@color/white">
+
+            <!--<ImageView
+                android:contentDescription="@string/icon_notices"
+                android:src="@drawable/newspaper_o"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:id="@+id/iconNews"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:padding="7sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_talkUs"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/speaker_b"
+                android:id="@+id/iconTalkUs"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:layout_weight="1"
+                android:padding="7sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_ride"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/car_b"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:id="@+id/iconRide"
+                android:layout_weight="1"
+                android:padding="10.1sp"/>
+
+            <ImageView
+                android:contentDescription="@string/icon_account"
+                android:onClick="menuIconRedirect"
+                android:src="@drawable/account_b"
+                android:id="@+id/iconAccount"
+                android:layout_height="40sp"
+                android:layout_width="40sp"
+                android:layout_weight="1"
+                android:padding="8sp"/>-->
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--Scroll Layout-->
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/defaultBackgroud"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <!--Main content Layout-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/mainContentLayout"
+            android:orientation="vertical">
+
+            <!--Loading - gif-->
+            <ImageView
+                android:contentDescription="@string/load_description"
+                android:id="@+id/imageLoadNotice"
+                android:layout_gravity="center"
+                android:layout_marginTop="5sp"
+                android:src="@drawable/load4"
+                android:layout_height="30sp"
+                android:visibility="visible"
+                android:layout_width="30sp"/>
+
+            <!--Content Layout-->
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/contentLayout"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <!--User photo and your name-->
+                <RelativeLayout
+                    android:id="@+id/profilePhotoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:minHeight="150sp">
+
+                    <!--Profile photo-->
+                    <ImageView
+                        android:contentDescription="@string/profile_photo"
+                        android:id="@+id/imageViewProfilePhoto"
+                        android:src="@drawable/default_user"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <!--User name-->
+                    <TextView
+                        android:paddingStart="@dimen/paddingRTitle"
+                        android:paddingLeft="@dimen/paddingRTitle"
+                        android:shadowColor="@color/shadowColor"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlSymmetry"
+                        android:id="@+id/userName"
+                        android:shadowRadius="3"
+                        android:textSize="24sp"
+                        android:shadowDx="0"
+                        android:shadowDy="0"/>
+
+                </RelativeLayout>
+
+                <!--User informations-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contentListLayout"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="20sp"
+                    android:orientation="vertical"
+                    tools:ignore="RtlSymmetry"
+                    android:paddingRight="8sp"
+                    android:paddingStart="8sp"
+                    android:paddingLeft="8sp">
+                    <!--LISTA DE INFORMACOES-->
+                </LinearLayout>
+
+                <!--Change password-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/formRecoverPass"
+                    android:background="@color/white"
+                    android:layout_marginTop="20sp"
+                    android:orientation="vertical"
+                    android:paddingRight="8sp"
+                    android:paddingStart="8sp"
+                    android:paddingLeft="8sp">
+
+                    <!--Label Trocar senha-->
+                    <TextView
+                        android:text="@string/recover_pass_activity_title"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <!--EditText Trocar senha-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/widgetPassUser"
+                        android:layout_marginTop="10sp"
+                        app:errorEnabled="true">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:hint="@string/new_pass_hint"
+                            android:layout_width="match_parent"
+                            android:inputType="textPassword"
+                            android:layout_marginTop="16sp"
+                            android:id="@+id/newPassUser"
+                            android:textSize="16sp"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Save Button-->
+                    <Button
+                        android:background="@drawable/shape_orangebuttom"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16sp"
+                        android:onClick="saveChanges"
+                        android:layout_width="200dp"
+                        android:id="@+id/loginUser"
+                        android:text="@string/save"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <!--Logoff-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20sp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20sp"
+                    android:paddingBottom="10sp"
+                    tools:ignore="RtlSymmetry"
+                    android:paddingStart="8sp"
+                    android:paddingLeft="8sp"
+                    android:paddingTop="10sp"
+                    android:onClick="logoff">
+
+                    <!--Logof icon-->
+                    <ImageView
+                        android:contentDescription="@string/logoff_description"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/logoff"
+                        android:layout_height="25sp"
+                        android:layout_width="25sp"/>
+
+                    <!--Label Sair-->
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/logoff"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

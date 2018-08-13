@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_borderradiuswhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainCarDetailsLayout"
+    tools:context=".toinflate.cardetails"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/customAppBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/customTooBar"
+            app:layout_collapseMode="pin"
+            android:padding="0dp">
+            <TextView
+                android:text="@string/ride_details_activity_title"
+                android:paddingRight="@dimen/paddingRTitle2"
+                android:paddingEnd="@dimen/paddingRTitle2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                tools:ignore="RtlSymmetry"
+                android:gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingStart="8sp"
+        android:paddingRight="8sp"
+        android:paddingLeft="8sp">
+
+        <!--Main Content Layout-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <!--Gif de carregamento-->
+            <ImageView
+                android:contentDescription="@string/load_description"
+                android:id="@+id/imageLoadCarDetails"
+                android:layout_marginTop="10sp"
+                android:layout_gravity="center"
+                android:src="@drawable/load3"
+                android:layout_height="30sp"
+                android:layout_width="30sp"/>
+
+            <!--Content Layout-->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/mainContentView"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--Layout detalhes do resonsavel-->
+                <RelativeLayout
+                    android:id="@+id/layoutResponsibleDetails"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16sp">
+
+                    <!--Foto do Responsavel-->
+                    <ImageView
+                        android:contentDescription="@string/profile_photo"
+                        android:src="@drawable/default_user_rounded"
+                        android:id="@+id/profilePhotoRideDetails"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:layout_height="130sp"
+                        android:layout_width="130sp"/>
+
+                    <!--Nome do Responsavel-->
+                    <TextView
+                        android:layout_below="@+id/profilePhotoRideDetails"
+                        android:id="@+id/responsibleNameRideDetails"
+                        android:text="Davi Rocha Macedo Sousa"
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:padding="8sp"/>
+
+                    <!--Email do Responsavel-->
+                    <TextView
+                        android:layout_below="@+id/responsibleNameRideDetails"
+                        android:text="E-mail: E-mail do dono do carro"
+                        android:id="@+id/responsibleMailRideDetails"
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:padding="8sp"/>
+
+                    <!--Telefone do Responsavel-->
+                    <TextView
+                        android:layout_below="@+id/responsibleMailRideDetails"
+                        android:text="Telefone: Telefone do dono do carro"
+                        android:id="@+id/responsibleTelRideDetails"
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8sp"/>
+
+                </RelativeLayout>
+
+                <!--Layout detalhes do aluno-->
+                <LinearLayout
+                    android:id="@+id/layoutStudentInformations"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16sp"
+                    android:orientation="vertical">
+
+                    <!--Label detalhes do aluno-->
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/studentDatailsLabel"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/labelSize"
+                        android:text="Responsável por"/>
+
+                    <!--Nome do aluno-->
+                    <TextView
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Nome: Nome do aluno"
+                        android:id="@+id/studentName"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:padding="8sp"
+                        android:maxLines="1"/>
+
+                    <!--Turma do aluno-->
+                    <TextView
+                        android:textColor="@color/pureBlack"
+                        android:text="Turma: Turma do aluno"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/studentClass"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:padding="8sp"/>
+
+                </LinearLayout>
+
+                <!--Layout detalhes do carro-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/layoutCarDetails"
+                    android:layout_marginTop="16sp"
+                    android:orientation="vertical">
+
+                    <!--Label detalhes do carro-->
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/labelSize"
+                        android:id="@+id/carDetailsLabel"
+                        android:text="Detalhes do Carro"/>
+
+                    <!--Marca do carro-->
+                    <TextView
+                        android:textColor="@color/pureBlack"
+                        android:text="Marca: Marca do carro"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:singleLine="true"
+                        android:id="@+id/carMark"
+                        android:ellipsize="end"
+                        android:padding="8sp"
+                        android:maxLines="1"/>
+
+                    <!--Modelo do carro-->
+                    <TextView
+                        android:textColor="@color/pureBlack"
+                        android:text="Modelo: Modelo do carro"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:id="@+id/carModel"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:padding="8sp"
+                        android:maxLines="1"/>
+
+                    <!--Cor do carro-->
+                    <TextView
+                        android:text="Cor: Cor do carro"
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:id="@+id/carColor"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:padding="8sp"
+                        android:maxLines="1"/>
+
+                    <!--Placa do carro-->
+                    <TextView
+                        android:text="Placa: Placa do carro"
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:id="@+id/carPlate"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:padding="8sp"
+                        android:maxLines="1"/>
+
+                    <!--Vagas disponiveis-->
+                    <TextView
+                        android:text="Vagas disponíveis: X"
+                        android:textColor="@color/pureBlack"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/carVacancies"
+                        android:paddingStart="16sp"
+                        android:paddingLeft="16sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:padding="8sp"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+                <!--Layout rotas-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/layoutRoutesCarDetails"
+                    android:layout_marginTop="16sp"
+                    android:orientation="vertical">
+
+                    <!--Label rotas-->
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/carRoutesDatailsLabel"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/labelSize"
+                        android:text="Roteiro"/>
+
+                </LinearLayout>
+
+                <!--Mensagem do rodape-->
+                <TextView
+                    android:textColor="@color/smoothGreyColor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:id="@+id/footerMessage"
+                    android:layout_marginTop="25sp"
+                    android:paddingRight="16sp"
+                    android:paddingLeft="16sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

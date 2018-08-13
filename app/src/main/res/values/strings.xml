@@ -1,0 +1,151 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Me Informe</string>
+    <string-array name="turma_aluno">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+    </string-array>
+
+    <string-array name="serie_aluno">
+        <item>1 ano</item>
+        <item>2 ano</item>
+        <item>3 ano</item>
+    </string-array>
+
+    <string name="title_activity_servico">Servico</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_intro">intro</string>
+    <string name="dummy_button">Dummy Button</string>
+
+    // Activity titles
+    <string name="recover_pass_activity_title">Trocar Senha</string>
+    <string name="talkUs_activity_title">FALE COM A GENTE</string>
+    <string name="ride_activity_title">CARONA SOLIDÁRIA</string>
+    <string name="ride_details_activity_title">DETALHES</string>
+    <string name="notice_activity_title">INFORMATIVOS</string>
+    <string name="account_activity_title">MINHA CONTA</string>
+    <string name="register_activity_title">Cadastro</string>
+
+    // Error messages
+    <string name="access_denied_string">Você está impedido de usar o aplicativo temporariamente.</string>
+    <string name="somethigis_wrong_popup">Algo deu errado. A mensagem não pôde ser recuperada.</string>
+    <string name="attempts_limit">Limite de tentativas excedido. Tente novamente mais tarde.</string>
+    <string name="route_required">Preencha, pelo menos, 5 ruas ou pontos de referência.</string>
+    <string name="fill_the_new_tel_field">Digite um novo telefone se deseja trocar.</string>
+    <string name="fill_the_new_pass_field">Digite uma senha nova se deseja trocar.</string>
+    <string name="irreal_vacancies">Há vagas demais para um carro particular.</string>
+    <string name="can_not_get_the_routes">Não foi possível recuperar a rota.</string>
+    <string name="tel_exists">O número digitado já existe. Digite outro.</string>
+    <string name="internet_connection">Não há conexão com a Internet.</string>
+    <string name="somethigis_wrong">Algo deu errado. Tente novamente.</string>
+    <string name="car_not_exists">Você não cadastrou um carro ainda.</string>
+    <string name="car_details_required">Preencha os dados do carro.</string>
+    <string name="route_limit">Limite referências atingido.</string>
+    <string name="user_not_found">Usuário não encontrado.</string>
+    <string name="nothing">Nenhum registro encontrado.</string>
+    <string name="data_error">Erro ao solicitar dados.</string>
+    <string name="car_not_found">Carro não encontrado.</string>
+    <string name="fill_all_field">Preencha os campos.</string>
+    <string name="route_section_description">Você precisa digitar, pelo menos, 5 ruas ou pontos de
+    referência por onde passa no caminho entre sua casa e a escola.</string>
+
+    // Hint messages
+    <string name="email_or_pass_wrong">E-mail ou Senha incorretos.</string>
+    <string name="required_input">Campo obrigatório.</string>
+    <string name="vacancies_hint">Vagas disponíveis</string>
+    <string name="new_pass_hint">Nova Senha</string>
+    <string name="registry_hint">Matrícula</string>
+    <string name="type_your_text">Mensagem</string>
+    <string name="route_hint">Referência</string>
+    <string name="tel_hint">Telefone</string>
+    <string name="model_hint">Modelo</string>
+    <string name="email_hint">E-mail</string>
+    <string name="plate_hint">Placa</string>
+    <string name="pass_hint">Senha</string>
+    <string name="mark_hint">Marca</string>
+    <string name="color_hint">Cor</string>
+
+    // CheckBox Labels
+    <string name="checkBoxAnonymousLabel">Anônimo</string>
+    <string name="checkBoxFormTypeDoubtLabel">Dúvida</string>
+    <string name="checkBoxFormTypePraiseLabel">Elogio</string>
+    <string name="checkBoxFormTypeComplaintLabel">Reclamação</string>
+
+    // View strings
+    <string name="forgot_password_text">Esqueceu a Senha?</string>
+    <string name="formType_title">Caráter da Mensagem</string>
+    <string name="identification_title">Identificação</string>
+    <string name="button_continue_text">CONTINUAR</string>
+    <string name="talkUs_message_title">Mensagem</string>
+    <string name="register_text">Cadastre-se</string>
+    <string name="delete_car">Apagar carro</string>
+    <string name="button_send_text">ENVIAR</string>
+    <string name="ten_recent">ÚLTIMOS 10</string>
+    <string name="new_tel">Novo Número</string>
+    <string name="save">SALVAR</string>
+    <string name="back">Voltar</string>
+    <string name="logoff">Sair</string>
+    <string name="route">Rota</string>
+    <string name="reload">↻</string>
+
+    // Texts
+    <string name="text_validate">Você está a um passo de aproveitar os recursos do MeInforme.\n
+        Digite sua matrícula e crie uma senha nova para a sua conta.</string>
+    <string name="recover_pass">Para trocar a senha da sua conta basta inserir o e-mail de login
+        e inserir a nova senha.</string>
+    <string name="success_password_update">Senha alterada com sucesso!</string>
+    <string name="success_data_update">Registro alterado com sucesso!</string>
+    <string name="success_data_insert">Registro inserido com sucesso!</string>
+    <string name="success_data_delete">Registro apagado com sucesso</string>
+    <string name="car_datails_label">Detalhes do carro</string>
+    <string name="car_datails_footer_information">Entre em contato com %1$s para acerta os detalhes
+        da carona e não esqueça de falar com seus responsáveis.</string>
+
+    // Image descriptions
+    <string name="profile_photo">Foto de perfil do usuário.</string>
+    <string name="add_item_description">Adicionar um item.</string>
+    <string name="logo_description">Imagem Logo MeInforme.</string>
+    <string name="load_description">GIF de carregamento.</string>
+    <string name="icon_talkUs">Icone Fale Com a Gente.</string>
+    <string name="icon_ride">Icone carona solidária.</string>
+    <string name="icon_notices">Icone Avisos.</string>
+    <string name="icon_account">Icone Conta.</string>
+    <string name="logoff_description">Sair.</string>
+
+    // Dialog texts
+        // Telefone invalido
+        <string name="dialog_tel_body">O número de telefone deve atender à máscara:\n\n(DDD)9####-####</string>
+        <string name="dialog_tel_title">Telefone inválido</string>
+
+        // Excluir carro
+        <string name="dialog_delete_car_body">Deseja excluir os dados do carro? Se desejar, pode criar outro novamente.</string>
+        <string name="confirm_the_action">Confirme a ação</string>
+
+    // Pop up texts
+        <string name="popup_text_1_1">Olá, seja bem vindo ao MEINFORME. Vamos começar com uma pequena introdução ao aplicativo.</string>
+        <string name="popup_text_1_2">Esta é a seção de Informativos, todos os avisos enviados pela sua escola poderão ser vistos aqui.\n
+        A princípio serão mostrados os 10 últimos avisos enviados, mas você pode ver avisos anteriores a esses filtrando pela data.\nPara
+        isso clique em "ÚLTIMOS 10" e escolha uma data.\n
+            Se quiser mudar a data repita o processo descrito anteriormente.</string>
+        <string name="popup_text_2_s">Esta é a seção de Carona Solidária. Aqui você verá os pais de alunos da sua escola que estão dispostos a
+        oferecer carona para outros estudantes da instituição.\nA princípio são mostradas prévias do roteiro realizado pelo responsável,
+        se quiser ver mais detalhes clique sobre o item.</string>
+        <string name="popup_text_2_r_1">Esta é a seção de Carona Solidária. Se você leva um estudante para a escola diariamente e ainda sobra
+            lugares no carro, você pode cadastrar o seu carro e informar o roteiro que faz todos os dias da sua casa até a escola para que
+            outros alunos que morem perto desse roteiro possa pegar uma carona com vocês.</string>
+        <string name="popup_text_2_r_2">Para isso você deve informar dados do carro e, no mínimo, 5 ruas, avenidas ou pontos de referência
+            que fazem parte do seu roteiro.</string>
+        <string name="popup_text_2_r_3">Após cadastrar o carro, para editá-lo basta alterar a informação desejada e clicar em "SALVAR". Se quiser
+            excluir uma rota basta deixar o campo em branco e clicar em "SALVAR".</string>
+        <string name="popup_text_2_r_4">Se, após registrar o carro, preferir apagá-lo e retirá-lo da lista de caronas basta ir para o fim da página e
+            clicar em "Apagar carro".</string>
+        <string name="popup_text_3">Se desejar a carona basta entrar em contato por e-mail, por telefone ou falar com o aluno pelo qual ele
+            é responsável.</string>
+        <string name="popup_text_4">Esta é a seção de Conta. Aqui serão listadas as informações sobre este usuário e também será possível editar o Telefone
+            e a senha.\nPara editar o telefone basta apagar o anterior, digitar o novo número e clicar em "SALVAR", o procedimento para a senha é o mesmo.</string>
+
+</resources>

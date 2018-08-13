@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/shape_boderbottomlist"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15sp"
+        android:id="@+id/defaultNEItem"
+        android:paddingBottom="8sp">
+
+        <TextView
+            android:textSize="@dimen/itemTitleSize"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/listItemTitle"
+            android:paddingBottom="6sp"
+            android:paddingStart="8sp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="8sp"
+            android:textStyle="bold"
+            android:text="Title"/>
+
+        <TextView
+            android:textSize="@dimen/itemBodySize"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/listItemBody"
+            android:paddingStart="8sp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="8sp"
+            android:text="Content"/>
+    </LinearLayout>
+
+</RelativeLayout>

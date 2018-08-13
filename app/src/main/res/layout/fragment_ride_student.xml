@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/defaultBackgroud"
+    tools:context=".fragments.ride_student"
+    android:layout_height="match_parent"
+    android:id="@+id/mainFragmentLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <!--Gif de carregamento-->
+    <ImageView
+        android:contentDescription="@string/load_description"
+        android:id="@+id/imageLoadRide"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:src="@drawable/load4"
+        android:layout_height="30sp"
+        android:layout_width="30sp"/>
+
+    <!--MainContent Layout-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/mainContentLayout"
+        android:layout_marginBottom="20sp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="invisible">
+    </LinearLayout>
+
+</LinearLayout>

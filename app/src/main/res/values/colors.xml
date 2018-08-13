@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#ff9b04</color>
+    <color name="colorPrimary">#ffb702</color>
+    <color name="colorAccent">#3d6594</color>
+
+    // Customized colors
+        <color name="greenSuccessColor">#75c231</color>
+        <color name="defaultBackgroud">#f3f3f3</color>
+        <color name="noticeTitleColor">#CC9202</color>
+        <color name="smoothGreyColor">#8d8d8d</color>
+        <color name="transparent">#00000000</color>
+        <color name="pureBlack">#111111</color>
+        <color name="white">#FFFFFF</color>
+
+    // Tela Fale Com a Gente
+        <color name="labelColor">#ffb706</color>
+
+    // Tela Minha Conta
+        <color name="shadowColor">#bcbcbc</color>
+
+    // Splash Screen
+        <color name="splashBackgroud">#fd9a04</color>
+
+    // input color: 8d8d8d
+
+    <color name="black_overlay">#66000000</color>
+</resources>
