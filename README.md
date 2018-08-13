@@ -5,7 +5,7 @@
 ## 1. The Problem
 We lived this. How much times we lost some important date or event in school because we lost a paper with a notice or forgot after hear (for a long time) someone say sonmething?
 
-The MeInfome app comes to resolve this (or try ¯\\_(ツ)_/¯).
+The MeInfome app comes to resolve this (or try ¯\\\_(ツ)\_/¯).
 
 ## 2. The Solution
 Tecnology is the present, with this we can be wonderful things, then why we wont use this in high school?
