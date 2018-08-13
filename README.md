@@ -15,9 +15,9 @@ Using an app and a web plataform we can facilitate the communication and made th
 ## 3. The Project
 The project is compose for 2 pataforms: Web and Mobile:
 
-    -The Web Plataform is directed to school where he can send notices and see the *Talk with us* sended by students.
+- The Web Plataform is directed to school where he can send notices and see the *Talk with us* sended by students.
 
-    -The Mobile Plataform is directed to student where he can see the notices sended by school and send the *Talk with us*.
+- The Mobile Plataform is directed to student where he can see the notices sended by school and send the *Talk with us*.
 
 ## 3.1 Mobile app
 The mobile, currently, is coded in native android language (Java) but i want to expand this to IOS (using Swift or rebuilding the app with Ionic).
