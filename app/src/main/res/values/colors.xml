@@ -12,6 +12,7 @@
         <color name="transparent">#00000000</color>
         <color name="pureBlack">#111111</color>
         <color name="white">#FFFFFF</color>
+        <color name="link">#337ab7</color>
 
     // Tela Fale Com a Gente
         <color name="labelColor">#ffb706</color>

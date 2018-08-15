@@ -40,7 +40,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:paddingStart="8sp"
+        tools:ignore="HardcodedText"
         android:paddingRight="8sp"
         android:paddingLeft="8sp">
 
@@ -148,8 +148,6 @@
                         android:layout_width="match_parent"
                         android:text="Nome: Nome do aluno"
                         android:id="@+id/studentName"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:singleLine="true"
                         android:ellipsize="end"
                         android:padding="8sp"
@@ -162,8 +160,6 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:id="@+id/studentClass"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:padding="8sp"/>
 
                 </LinearLayout>
@@ -191,8 +187,6 @@
                         android:text="Marca: Marca do carro"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:singleLine="true"
                         android:id="@+id/carMark"
                         android:ellipsize="end"
@@ -201,12 +195,10 @@
 
                     <!--Modelo do carro-->
                     <TextView
-                        android:textColor="@color/pureBlack"
                         android:text="Modelo: Modelo do carro"
+                        android:textColor="@color/pureBlack"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:id="@+id/carModel"
                         android:singleLine="true"
                         android:ellipsize="end"
@@ -219,8 +211,6 @@
                         android:textColor="@color/pureBlack"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:id="@+id/carColor"
                         android:singleLine="true"
                         android:ellipsize="end"
@@ -233,8 +223,6 @@
                         android:textColor="@color/pureBlack"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:id="@+id/carPlate"
                         android:singleLine="true"
                         android:ellipsize="end"
@@ -248,8 +236,6 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:id="@+id/carVacancies"
-                        android:paddingStart="16sp"
-                        android:paddingLeft="16sp"
                         android:singleLine="true"
                         android:ellipsize="end"
                         android:padding="8sp"
@@ -259,9 +245,9 @@
 
                 <!--Layout rotas-->
                 <LinearLayout
+                    android:id="@+id/layoutRoutesCarDetails"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:id="@+id/layoutRoutesCarDetails"
                     android:layout_marginTop="16sp"
                     android:orientation="vertical">
 

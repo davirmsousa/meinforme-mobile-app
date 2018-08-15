@@ -13,6 +13,7 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyEvent;
@@ -187,6 +188,7 @@ public class notices extends AppCompatActivity{
     private String reverseDate(String dt, String toCut, String toPut){
         String[] s = dt.split(toCut);
         if(s[1].length() == 1) s[1] = "0" + s[1];
+        if(s[2].length() == 1) s[2] = "0" + s[2];
         return s[2] + toPut + s[1] + toPut + s[0];
     }
 

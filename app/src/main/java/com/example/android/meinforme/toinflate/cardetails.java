@@ -3,10 +3,15 @@ package com.example.android.meinforme.toinflate;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -29,6 +34,7 @@ public class cardetails extends Activity{
     String url = "http://meinforme.pe.hu/apk/ride/ride_model.php", parametros = "";
     android.support.v7.widget.Toolbar customTooBar;
     LinearLayout linearContent, linearRoutes;
+    TextView respondibleTelephone, responsibleMail;
     CoordinatorLayout mainLayout;
     ImageView loadGif;
     int attempts = 0;
@@ -51,10 +57,14 @@ public class cardetails extends Activity{
         linearContent = findViewById(R.id.mainContentView);
         // Toobar
         customTooBar = findViewById(R.id.customTooBar);
-        // gif loader
+        // Gif loader
         loadGif = findViewById(R.id.imageLoadCarDetails);
         Glide.with(this).load(R.drawable.load3).asGif().into(loadGif);
-
+        // TextViews
+        respondibleTelephone = findViewById(R.id.responsibleTelRideDetails);
+        respondibleTelephone.setOnClickListener(startCallListener);
+        responsibleMail = findViewById(R.id.responsibleMailRideDetails);
+        responsibleMail.setOnClickListener(sendEmailListener);
 
         // Ativar o botao de retorno do menu
         customTooBar.setNavigationIcon(R.drawable.back_icon);
@@ -100,9 +110,9 @@ public class cardetails extends Activity{
                 case "car_found": // Details
                     // Dados do responsavel
                     JSONObject ownerData = returned.getJSONObject("ownerData");
-                    insertTextInView(R.id.responsibleTelRideDetails, "Telefone: " + ownerData.getString("tel"));
+                    insertSpannableInView(R.id.responsibleTelRideDetails, "Telefone: " + ownerData.getString("tel"), 10);
+                    insertSpannableInView(R.id.responsibleMailRideDetails, "Email: " + ownerData.getString("email"), 7);
                     insertTextInView(R.id.responsibleNameRideDetails, ownerData.getString("name"));
-                    insertTextInView(R.id.responsibleMailRideDetails, "Email: " + ownerData.getString("email"));
                     // Dados do aluno
                     JSONObject studentData = returned.getJSONObject("StudentData");
                     insertTextInView(R.id.studentName, "Nome: " + studentData.getString("studentName"));
@@ -138,6 +148,14 @@ public class cardetails extends Activity{
     private void insertTextInView(int id, String text){
         TextView tempTv = findViewById(id);
         tempTv.setText(text);
+    }
+
+    // Funcao para regar um id e atribui um texto
+    private void insertSpannableInView(int id, String text, int start){
+        SpannableString tempSpannable = new SpannableString(text);tempSpannable.setSpan(new UnderlineSpan(), start, tempSpannable.length(), 0);
+        tempSpannable.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.link)), start, text.length(), 0);
+        TextView tempTv = findViewById(id);
+        tempTv.setText(tempSpannable);
     }
 
     // Funcao para adicionar um item de rota na tela
@@ -200,6 +218,30 @@ public class cardetails extends Activity{
         @Override
         public void onClick(View v) {
             finish();
+        }
+    };
+
+    // Funcao para quando o usuario clicar no telefone do responsavel abrir o aplicativo nativo de ligacao
+    private View.OnClickListener startCallListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String tel = respondibleTelephone.getText().toString();
+            tel = tel.substring(10, tel.length());
+            Uri uri = Uri.parse("tel:" + tel);
+            Intent intent = new Intent(Intent.ACTION_DIAL,uri);
+            startActivity(intent);
+        }
+    };
+
+    // Funcao para quando o usuario clicar no botao de voltar
+    private View.OnClickListener sendEmailListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String email = responsibleMail.getText().toString();
+            email = email.substring(7, email.length());
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("mailto:" + email));
+            startActivity(intent);
         }
     };
 
