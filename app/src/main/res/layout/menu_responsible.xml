@@ -13,6 +13,7 @@
         android:paddingBottom="5dp"
         android:paddingTop="5dp">
 
+        <!--Icon Notices-->
         <ImageView
             android:contentDescription="@string/icon_notices"
             android:src="@drawable/newspaper_b"
@@ -23,6 +24,7 @@
             android:layout_weight="1"
             android:padding="7sp"/>
 
+        <!--Icon Ride-->
         <ImageView
             android:contentDescription="@string/icon_ride"
             android:onClick="menuIconRedirect"
@@ -30,9 +32,11 @@
             android:layout_height="40sp"
             android:layout_width="40sp"
             android:id="@+id/iconRide"
+            android:visibility="gone"
             android:layout_weight="1"
             android:padding="10.1sp"/>
 
+        <!--Icon Account-->
         <ImageView
             android:contentDescription="@string/icon_account"
             android:onClick="menuIconRedirect"
