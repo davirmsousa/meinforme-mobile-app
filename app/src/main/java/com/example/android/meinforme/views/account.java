@@ -35,7 +35,7 @@ import java.io.IOException;
 
 public class account extends AppCompatActivity {
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/account/account_model.php", parametros = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/account/account_model.php", parametros = "";
     LinearLayout menuIcon, contentListLayout, contentLayout;
     CoordinatorLayout mainLayout;
     TextView viewUserName;
@@ -64,7 +64,7 @@ public class account extends AppCompatActivity {
         contentListLayout = findViewById(R.id.contentListLayout);
         Glide.with(this).load(R.drawable.load4).asGif().into(loadGif);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/account/account_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/account/account_model.php";
 
         // Inflar o menu de estudante ou de responsavel
         int menu = R.layout.menu_student;

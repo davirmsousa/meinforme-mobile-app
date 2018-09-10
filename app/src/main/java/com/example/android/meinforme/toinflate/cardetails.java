@@ -31,7 +31,7 @@ import java.util.Objects;
 
 public class cardetails extends Activity{
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/ride/ride_model.php", parametros = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/ride/ride_model.php", parametros = "";
     android.support.v7.widget.Toolbar customTooBar;
     LinearLayout linearContent, linearRoutes;
     TextView respondibleTelephone, responsibleMail;
@@ -70,7 +70,7 @@ public class cardetails extends Activity{
         customTooBar.setNavigationIcon(R.drawable.back_icon);
         customTooBar.setNavigationOnClickListener(backListener);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/ride/ride_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/ride/ride_model.php";
 
         // Verifica se existe algum putExtra
         Bundle extras = getIntent().getExtras();

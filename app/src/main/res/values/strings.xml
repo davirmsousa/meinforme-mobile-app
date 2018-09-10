@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Me Informe</string>
+    <string name="app_name">Seu Informe</string>
     <string-array name="turma_aluno">
         <item>A</item>
         <item>B</item>
@@ -93,7 +93,7 @@
     <string name="reload">↻</string>
 
     // Texts
-    <string name="text_validate">Você está a um passo de aproveitar os recursos do MeInforme.\n
+    <string name="text_validate">Você está a um passo de aproveitar os recursos do SeuInforme.\n
         Digite sua matrícula e crie uma senha nova para a sua conta.</string>
     <string name="recover_pass">Para trocar a senha da sua conta basta inserir o e-mail de login
         e inserir a nova senha.</string>
@@ -108,7 +108,7 @@
     // Image descriptions
     <string name="profile_photo">Foto de perfil do usuário.</string>
     <string name="add_item_description">Adicionar um item.</string>
-    <string name="logo_description">Imagem Logo MeInforme.</string>
+    <string name="logo_description">Imagem Logo SeuInforme.</string>
     <string name="load_description">GIF de carregamento.</string>
     <string name="icon_talkUs">Icone Fale Com a Gente.</string>
     <string name="icon_ride">Icone carona solidária.</string>
@@ -126,7 +126,7 @@
         <string name="confirm_the_action">Confirme a ação</string>
 
     // Pop up texts
-        <string name="popup_text_1_1">Olá, seja bem vindo ao MEINFORME. Vamos começar com uma pequena introdução ao aplicativo.</string>
+        <string name="popup_text_1_1">Olá, seja bem vindo ao SeuInforme. Vamos começar com uma pequena introdução ao aplicativo.</string>
         <string name="popup_text_1_2">Esta é a seção de Informativos, todos os avisos enviados pela sua escola poderão ser vistos aqui.\n
         A princípio serão mostrados os 10 últimos avisos enviados, mas você pode ver avisos anteriores a esses filtrando pela data.\nPara
         isso clique em "ÚLTIMOS 10" e escolha uma data.\n

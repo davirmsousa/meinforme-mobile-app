@@ -30,7 +30,7 @@ import java.util.Objects;
 
 public class login extends AppCompatActivity{
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/user/user_model.php", parametros = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/user/user_model.php", parametros = "";
     TextInputLayout widgetEmail, widgetPass;
     TextView viewPassUser, viewEmailUser;
     RelativeLayout mainLoginLayout;
@@ -63,7 +63,7 @@ public class login extends AppCompatActivity{
             public void onTextChanged(CharSequence s, int start, int before, int count){widgetEmail.setError(null);}
         });
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/user/user_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/user/user_model.php";
 
         // Verifica se existe algum putExtra
         Bundle extras = getIntent().getExtras();

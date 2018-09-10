@@ -39,7 +39,7 @@ import java.util.Objects;
 
 public class ride_responsible extends Fragment {
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/ride/ride_model.php", parametros = "", routeParameters = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/ride/ride_model.php", parametros = "", routeParameters = "";
     TextInputLayout widgetMark, widgetModel, widgetColor, widgetPlate, widgetVacancies;
     LinearLayout linearLRoute, mainLayout, linearContent, linearDeleteCar;
     EditText editMark, editModel, editColor, editPlate, editVacancies;
@@ -57,7 +57,7 @@ public class ride_responsible extends Fragment {
         // Inflar o Layout
         fragment = inflater.inflate(R.layout.fragment_ride_responsible, container, false);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/ride/ride_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/ride/ride_model.php";
 
         // Vinculação dos objetos xml
         // Layouts

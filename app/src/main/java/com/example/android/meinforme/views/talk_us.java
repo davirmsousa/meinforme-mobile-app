@@ -36,7 +36,7 @@ import java.text.SimpleDateFormat;
 
 public class talk_us extends AppCompatActivity {
     //Declaração de objetos do xml
-    String schoolCode, studentMessage, studentRegistry, formType, isAnonymous, url = "http://meinforme.pe.hu/apk/talkUs/talkUs_model.php", parametros = "";
+    String schoolCode, studentMessage, studentRegistry, formType, isAnonymous, url = "http://seuinforme.com.br/meinforme-apk/talkUs/talkUs_model.php", parametros = "";
     @SuppressLint("SimpleDateFormat") String sendDate = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
     TextInputLayout widgetStudentMessage;
     CoordinatorLayout mainLayout;
@@ -58,7 +58,7 @@ public class talk_us extends AppCompatActivity {
         menuIcon = findViewById(R.id.LinearMenuIcon);
         mainLayout = findViewById(R.id.MainLayoutTU);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/talkUs/talkUs_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/talkUs/talkUs_model.php";
 
         // Inflar o menu de estudante ou de responsavel
         int menu = R.layout.menu_student;

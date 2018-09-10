@@ -30,7 +30,7 @@ import java.util.Objects;
 
 public class recover_pass extends AppCompatActivity {
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/user/user_model.php", parametros = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/user/user_model.php", parametros = "";
     TextView viewEmailRecover, viewPassRecover, viewSuccessMessage;
     TextInputLayout widgetEmail, widgetPass;
     RelativeLayout mainLinearLayout;
@@ -52,7 +52,7 @@ public class recover_pass extends AppCompatActivity {
         widgetEmail = findViewById(R.id.widgetEmailUser);
         widgetPass = findViewById(R.id.widgetPassUser);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/user/user_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/user/user_model.php";
 
         // Para qualquer alteração nos inputs eu retiro a mensagem de erro
         viewEmailRecover.addTextChangedListener(new TextWatcher() {
@@ -114,6 +114,12 @@ public class recover_pass extends AppCompatActivity {
                     break;
                 case "update_ok"://se o update foi concluido
                     viewSuccessMessage.setVisibility(View.VISIBLE);
+                    break;
+                case "access_error"://se o update foi concluido
+                    Snackbar.make(mainLinearLayout, "Você não tem permissão para realizar esta ação.", Snackbar.LENGTH_LONG).show();
+                    break;
+                case "validation_error"://se o update foi concluido
+                    Snackbar.make(mainLinearLayout, "Você precisa validar esta conta antes de trocar a senha.", Snackbar.LENGTH_LONG).show();
                     break;
                 default:
                     Snackbar.make(mainLinearLayout, getString (R.string.somethigis_wrong), Snackbar.LENGTH_LONG).show();

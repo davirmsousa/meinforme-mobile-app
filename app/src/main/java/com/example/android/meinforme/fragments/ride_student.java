@@ -32,7 +32,7 @@ import java.util.Objects;
 
 public class ride_student extends Fragment {
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/ride/ride_model.php", parametros = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/ride/ride_model.php", parametros = "";
     LinearLayout mainLayout, linearContent;
     LayoutInflater systemServiceInflater;
     ImageView loadGif;
@@ -53,7 +53,7 @@ public class ride_student extends Fragment {
         // Inflater
         systemServiceInflater = inflater;
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/ride/ride_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/ride/ride_model.php";
 
         // Vinculação dos objetos xml
         // Layouts

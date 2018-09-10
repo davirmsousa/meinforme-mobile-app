@@ -29,7 +29,7 @@ import java.io.IOException;
 
 public class validate extends AppCompatActivity {
     // Declaração de objetos do xml
-    String url = "http://meinforme.pe.hu/apk/user/user_model.php", parametros;
+    String url = "http://seuinforme.com.br/meinforme-apk/user/user_model.php", parametros;
     TextView viewPassStudent, viewRegistryStud;
     TextInputLayout widgetRegistry, widgetPass;
     RelativeLayout mainValidateLayout;
@@ -48,7 +48,7 @@ public class validate extends AppCompatActivity {
         viewRegistryStud = findViewById(R.id.validRegistry);
         widgetPass = findViewById(R.id.widgetPassUser);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/user/user_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/user/user_model.php";
 
         // Para qualquer alteração nos inputs eu retiro a mensagem de erro
         viewPassStudent.addTextChangedListener(new TextWatcher() {

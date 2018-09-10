@@ -26,7 +26,7 @@ import java.io.IOException;
  */
 
 public class main extends AppCompatActivity implements Runnable  {
-    String url = "http://meinforme.pe.hu/apk/user/user_model.php", parametros = "";
+    String url = "http://seuinforme.com.br/meinforme-apk/user/user_model.php", parametros = "";
     RelativeLayout mainLayout;
     ImageView loadGif;
     // Tentativas para se conectar [maximo de 2]
@@ -43,7 +43,7 @@ public class main extends AppCompatActivity implements Runnable  {
 
         mainLayout = findViewById(R.id.mainLayoutSplashScreen);
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/user/user_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/user/user_model.php";
 
         // Um delay para a logo aparecer por mais tempo
         Handler handler = new Handler();

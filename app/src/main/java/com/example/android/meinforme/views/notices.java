@@ -50,7 +50,7 @@ import java.util.Date;
 public class notices extends AppCompatActivity{
     // Declaração de objetos do xml
     @SuppressLint("SimpleDateFormat")String dateString = new SimpleDateFormat("yyyy-M-d").format(System.currentTimeMillis());
-    String url = "http://meinforme.pe.hu/apk/notices/notices_model.php", parametros = "", schoolCode;
+    String url = "http://seuinforme.com.br/meinforme-apk/notices/notices_model.php", parametros = "", schoolCode;
     CoordinatorLayout MainLayoutNotices;
     LinearLayout NoticeLayout, menuIcon;
     DatePickerDialog datePick;
@@ -76,7 +76,7 @@ public class notices extends AppCompatActivity{
             startActivity(new Intent(this, popup.class).putExtra("messageNum", 1));
         }
 
-        url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/Meinforme-Apk/notices/notices_model.php";
+        //url = "http://10.0.2.2:8080/my%20portable%20files/MEINFORME/meinforme-apk/notices/notices_model.php";
 
         // Inflar o menu de estudante ou de responsavel
         int menu = R.layout.menu_student;

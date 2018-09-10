@@ -38,7 +38,7 @@ public class register_user extends AppCompatActivity {
     Spinner spinSerie, spinTurma ;
     Button btnCadastrarAluno;
     TextView viewCodEscolaAluno, viewcadNomeAluno, viewCadEmailAluno, viewCadSenhaAluno, viewCadMatriAln;
-    String url = "http://meinforme.pe.hu/apk/cadastraaluno/registrarAluno.php", parametros = "", serieEscolhida = "", turmaEscolhida = "", codigo;
+    String url = "http://seuinforme.com.br/meinforme-apk/cadastraaluno/registrarAluno.php", parametros = "", serieEscolhida = "", turmaEscolhida = "", codigo;
     LinearLayout linerarGif;
 
 

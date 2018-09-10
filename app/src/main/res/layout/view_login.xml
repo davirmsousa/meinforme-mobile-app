@@ -24,7 +24,9 @@
         <ImageView
             android:contentDescription="@string/logo_description"
             android:src="@drawable/logo_me_informe"
-            android:layout_height="wrap_content"
+            android:layout_height="125sp"
+            android:paddingRight="20sp"
+            android:paddingLeft="20sp"
             android:layout_width="match_parent"
             android:layout_marginBottom="20sp"/>
 
@@ -104,6 +106,8 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/registerUser"
                 android:layout_marginTop="8sp"
+                android:visibility="invisible"
+                android:clickable="false"
                 android:textStyle="bold"
                 android:gravity="start"
                 android:textSize="15sp"/>
