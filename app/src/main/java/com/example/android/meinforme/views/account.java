@@ -136,8 +136,8 @@ public class account extends AppCompatActivity {
                 case "user_found": // Do something
                     viewUserName.setText(returned.getString("name"));
                     InsertItemNotEditable("Matrícula", preferences_manipulator.getString(getBaseContext(), "identifier", "Not Found"));
-                    InsertItemNotEditable("Turma", preferences_manipulator.getString(getBaseContext(), "class", "").substring(1, 2));
-                    InsertItemNotEditable("Seriado", preferences_manipulator.getString(getBaseContext(), "class", "").substring(0, 1) + "° ano");
+                    InsertItemNotEditable("Turma", returned.getString("class"));
+                    InsertItemNotEditable("Seriado", returned.getString("serie") + "° ano");
                     InsertItemNotEditable("E-mail", returned.getString("email"));
                     InsertItemNotEditable("Vinculado à escola", returned.getString("schoolName"));
                     InsertItemNotEditable("Fale Com a Gente enviados", returned.getString("amountOfTalkWithUs"));
@@ -173,8 +173,8 @@ public class account extends AppCompatActivity {
                     InsertItemNotEditable("E-mail", returned.getString("email"));
                     InsertItemNotEditable("Nome do usuário vinculado", returned.getString("studentName"));
                     InsertItemNotEditable("Matrícula do usuário vinculado", returned.getString("studentRegistry"));
-                    InsertItemNotEditable("Turma do usuário vinculado", preferences_manipulator.getString(getBaseContext(), "class", "").substring(1, 2));
-                    InsertItemNotEditable("Seriado do usuário vinculado", preferences_manipulator.getString(getBaseContext(), "class", "").substring(0, 1) + "° ano");
+                    InsertItemNotEditable("Turma do usuário vinculado", returned.getString("class"));
+                    InsertItemNotEditable("Seriado do usuário vinculado", returned.getString("serie") + "° ano");
                     InsertItemNotEditable("Vinculado à escola", returned.getString("schoolName"));
                     InsertItemEditable(returned.getString("tel"));
                     preferences_manipulator.putString(getApplicationContext(), "tel", returned.getString("tel"));

@@ -218,6 +218,13 @@ public class notices extends AppCompatActivity{
             }else{// Se for pra pegar de data especifica
                 parametros+= "&action=1&noticeDate=" + dateString;
             }
+
+            if(preferences_manipulator.getString(getApplicationContext(), "type", "").equals("student")){// Se for user estudante
+                parametros+= "&destin=2";
+            }else{// Se for user reponsavel
+                parametros+= "&destin=1";
+            }
+
             new requestData().execute(url);
         }else{ // Se não houver conexão com a internet
             // Deixa o gif invisivel
